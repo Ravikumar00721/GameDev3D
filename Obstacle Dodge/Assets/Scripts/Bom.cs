@@ -8,6 +8,11 @@ public class Bom : MonoBehaviour
 
     Vector3 playerPosition;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Awake()
+    {
+        gameObject.SetActive(false);
+    }
+
     void Start()
     {
         playerPosition = player.transform.position;

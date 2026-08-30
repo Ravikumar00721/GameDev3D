@@ -9,6 +9,7 @@ public class TriggerProject : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             projjectile.SetActive(true);
+            Destroy(gameObject);
         }
     }
 }
